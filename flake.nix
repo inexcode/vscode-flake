@@ -54,5 +54,6 @@
         in
         {
           inherit packages devShells;
+          channels.nixpkgs.config.allowUnfree = true;
         });
 }
