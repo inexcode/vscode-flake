@@ -5,12 +5,12 @@
     nixpkgs.follows = "nix-vscode-extensions/nixpkgs";
   };
 
-  outputs = inputs:
-    inputs.flake-utils.lib.eachDefaultSystem
+  outputs = { self, flake-utils, nixpkgs, nix-vscode-extensions }:
+    flake-utils.lib.eachDefaultSystem
       (system:
         let
-          pkgs = import inputs.nixpkgs { system = system; config.allowUnfree = true; };
-          extensions = inputs.nix-vscode-extensions.extensions.${system};
+          pkgs = import nixpkgs { inherit system; config = { allowUnfree = true; }; };
+          extensions = nix-vscode-extensions.extensions.${system};
           inherit (pkgs) vscode-with-extensions vscode;
 
           packages.default =
