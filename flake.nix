@@ -9,7 +9,7 @@
     inputs.flake-utils.lib.eachDefaultSystem
       (system:
         let
-          pkgs = inputs.nixpkgs.legacyPackages.${system};
+          pkgs = import inputs.nixpkgs { system = system; config.allowUnfree = true; };
           extensions = inputs.nix-vscode-extensions.extensions.${system};
           inherit (pkgs) vscode-with-extensions vscode;
 
