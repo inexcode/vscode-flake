@@ -20,6 +20,7 @@
                 pkgs.vscode-extensions.github.copilot
                 pkgs.vscode-extensions.ms-vscode-remote.remote-ssh
                 pkgs.vscode-extensions.eugleo.magic-racket
+                pkgs.vscode-extensions.ms-python.python
 
                 extensions.vscode-marketplace.arcticicestudio.nord-visual-studio-code
                 extensions.vscode-marketplace.bbenoist.nix
@@ -30,7 +31,7 @@
                 extensions.vscode-marketplace.mhutchie.git-graph
                 extensions.vscode-marketplace.ms-azuretools.vscode-docker
                 extensions.vscode-marketplace.ms-python.vscode-pylance
-                (extensions.forVSCodeVersion "1.81.1").vscode-marketplace.ms-python.python
+                # (extensions.forVSCodeVersion "1.81.1").vscode-marketplace.ms-python.python
                 extensions.vscode-marketplace.ms-toolsai.jupyter
                 extensions.vscode-marketplace.ms-vscode.cpptools
                 extensions.vscode-marketplace.github.github-vscode-theme
