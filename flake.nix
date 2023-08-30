@@ -30,7 +30,7 @@
                 extensions.vscode-marketplace.mhutchie.git-graph
                 extensions.vscode-marketplace.ms-azuretools.vscode-docker
                 extensions.vscode-marketplace.ms-python.vscode-pylance
-                extensions.vscode-marketplace.ms-python.python
+                (extensions.forVSCodeVersion "1.81.1").vscode-marketplace.ms-python.python
                 extensions.vscode-marketplace.ms-toolsai.jupyter
                 extensions.vscode-marketplace.ms-vscode.cpptools
                 extensions.vscode-marketplace.github.github-vscode-theme
