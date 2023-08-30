@@ -2,7 +2,7 @@
   inputs = {
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     flake-utils.follows = "nix-vscode-extensions/flake-utils";
-    nixpkgs.follows = "nix-vscode-extensions/nixpkgs";
+    nixpkgs.follows = "nixpkgs";
   };
 
   outputs = { self, flake-utils, nixpkgs, nix-vscode-extensions }:
